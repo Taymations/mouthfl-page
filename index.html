@@ -408,120 +408,6 @@ section { padding: 110px 0; }
   width: 100%; display: block;
 }
 
-/* ── Pricing ─────────────────────────────────────────────────────────────── */
-.pricing-section {
-  position: relative; overflow: hidden; background: var(--bg);
-}
-.pricing-blob {
-  position: absolute; inset: 0; pointer-events: none;
-  opacity: 0.55; z-index: 0;
-}
-.pricing-inner { position: relative; z-index: 1; }
-.pricing-card {
-  background: rgba(255,255,255,0.92);
-  border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 20px; padding: 52px 48px;
-  max-width: 520px; margin: 56px auto 0;
-  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 8px 40px rgba(0,0,0,0.10);
-  text-align: center;
-}
-.pricing-label {
-  font-family: var(--mono); font-size: 11px; font-weight: 600;
-  letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal);
-  margin-bottom: 10px;
-}
-.pricing-title {
-  font-family: var(--display); font-weight: 400; font-size: 40px;
-  letter-spacing: 0.01em; color: var(--text); margin-bottom: 8px;
-}
-.pricing-sub { font-size: 14px; color: var(--text-2); margin-bottom: 32px; }
-.pricing-min {
-  font-size: 12px; color: var(--text-3); font-family: var(--mono);
-  margin-bottom: 10px;
-}
-.price-input-wrap {
-  display: flex; align-items: center; justify-content: center;
-  gap: 0; margin-bottom: 8px;
-}
-.price-currency {
-  font-family: var(--display); font-size: 32px; font-weight: 400;
-  color: var(--text-3); padding-right: 4px; align-self: flex-start; margin-top: 10px;
-}
-.price-input {
-  background: transparent; border: none; outline: none;
-  font-family: var(--display); font-size: 56px; font-weight: 400;
-  color: var(--teal); width: 160px; text-align: center;
-  letter-spacing: -0.01em; caret-color: var(--teal);
-}
-.price-input::placeholder { color: rgba(62,207,192,0.3); }
-.price-slider {
-  -webkit-appearance: none; appearance: none;
-  width: 100%; height: 4px;
-  background: linear-gradient(to right, var(--teal) 0%, var(--teal) 20%, rgba(0,0,0,0.12) 20%);
-  border-radius: 2px; outline: none; margin-bottom: 28px; cursor: pointer;
-}
-.price-slider::-webkit-slider-thumb {
-  -webkit-appearance: none; appearance: none;
-  width: 18px; height: 18px; border-radius: 50%;
-  background: var(--teal); cursor: pointer;
-  box-shadow: 0 0 10px var(--teal-glow);
-}
-.price-slider::-moz-range-thumb {
-  width: 18px; height: 18px; border-radius: 50%; border: none;
-  background: var(--teal); cursor: pointer;
-  box-shadow: 0 0 10px var(--teal-glow);
-}
-.btn-buy {
-  width: 100%; padding: 16px;
-  background: #000; color: #fff;
-  font-family: var(--display); font-weight: 400; font-size: 18px;
-  letter-spacing: 0.04em; text-transform: uppercase;
-  border-radius: 10px; border: none; cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-}
-.btn-buy:hover {
-  background: var(--teal); color: #000;
-  transform: translateY(-1px);
-}
-.pricing-perks {
-  margin-top: 24px; display: flex; flex-direction: column; gap: 10px;
-}
-.pricing-perk {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 13px; color: var(--text-2);
-}
-.pricing-perk-icon { color: var(--teal); font-size: 14px; flex-shrink: 0; }
-.pricing-note {
-  margin-top: 28px; font-size: 12px; color: var(--text-3); font-family: var(--mono);
-}
-
-/* ── Footer ──────────────────────────────────────────────────────────────── */
-.footer {
-  border-top: 1px solid rgba(0,0,0,0.08);
-  padding: 44px 0; background: #fff;
-}
-.footer-inner {
-  max-width: var(--max-w); margin: 0 auto; padding: 0 28px;
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 20px;
-}
-.footer-logo {
-  font-family: var(--display); font-weight: 400; font-size: 20px;
-  color: var(--text); display: flex; align-items: center; gap: 8px;
-  letter-spacing: 0.02em;
-}
-.footer-tagline { font-size: 12px; color: var(--text-3); margin-top: 4px; font-style: italic; }
-.footer-links { display: flex; gap: 24px; }
-.footer-links a {
-  font-family: var(--display); font-size: 14px; color: var(--text-3);
-  letter-spacing: 0.04em; text-transform: uppercase;
-  transition: color 0.2s;
-}
-.footer-links a:hover { color: var(--text); }
-.footer-copy { font-size: 12px; color: var(--text-3); }
-
 /* ── Scroll reveal ───────────────────────────────────────────────────────── */
 .reveal {
   opacity: 0; transform: translateY(24px);
@@ -548,7 +434,6 @@ section { padding: 110px 0; }
 @media (max-width: 600px) {
   .features-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
-  .pricing-card { padding: 36px 24px; }
   section { padding: 72px 0; }
 }
 </style>
@@ -561,7 +446,7 @@ section { padding: 110px 0; }
       <a href="#howit">How It Works</a>
       <a href="#features">Features</a>
     </div>
-    <a href="#pricing" class="nav-cta">Get MouthFL — $10+</a>
+    <a href="https://taymations.com" class="nav-cta" target="_blank" rel="noopener">Get MouthFL</a>
   </div>
 </nav>
 
@@ -578,7 +463,7 @@ section { padding: 110px 0; }
         animation workflow.
       </p>
       <div class="hero-actions">
-        <a href="#pricing" class="btn-primary">Get MouthFL →</a>
+        <a href="https://taymations.com" class="btn-primary" target="_blank" rel="noopener">Get MouthFL →</a>
         <a href="#howit" class="btn-ghost">See how it works</a>
       </div>
       <p class="hero-os">macOS 12+ · Works fully offline · No subscription</p>
@@ -749,67 +634,6 @@ section { padding: 110px 0; }
   </div>
 </section>
 
-<!-- ── PRICING ────────────────────────────────────────────────────────── -->
-<section id="pricing" class="pricing-section">
-
-  <div class="wrap pricing-inner">
-    <div class="reveal" style="text-align:center;">
-      <p class="section-eyebrow">Pricing</p>
-      <h2 class="section-heading">Pay what it's worth to you.</h2>
-      <p class="section-body" style="margin:0 auto;">MouthFL is pay-what-you-want. Set a price above the minimum and download immediately. No subscription, no account required.</p>
-    </div>
-    <div class="pricing-card reveal">
-      <div class="pricing-label">Pay What You Want</div>
-      <div class="pricing-title">MouthFL for Mac</div>
-      <div class="pricing-sub">One-time · yours forever</div>
-      <div class="pricing-min">Minimum price: $10.00</div>
-      <div class="price-input-wrap">
-        <span class="price-currency">$</span>
-        <input type="number" class="price-input" id="priceInput" value="10" min="10" placeholder="10">
-      </div>
-      <input type="range" class="price-slider" id="priceSlider" min="10" max="100" value="10" step="5">
-      <!-- PAYMENT_URL: Replace href="#" with your Gumroad, SquareSpace Store, or payment link -->
-      <a href="#" id="buyBtn" class="btn-buy" onclick="handleBuy(event)">
-        Buy MouthFL — <span id="buyPrice">$10</span>
-      </a>
-      <div class="pricing-perks">
-        <div class="pricing-perk">
-          <span class="pricing-perk-icon">✓</span>
-          <span>macOS 12 Monterey or later (Apple Silicon &amp; Intel)</span>
-        </div>
-        <div class="pricing-perk">
-          <span class="pricing-perk-icon">✓</span>
-          <span>Works 100% offline</span>
-        </div>
-        <div class="pricing-perk">
-          <span class="pricing-perk-icon">✓</span>
-          <span>Face Set + Shape Pack Guide included</span>
-        </div>
-        <div class="pricing-perk">
-          <span class="pricing-perk-icon">✓</span>
-          <span>No subscription, no account, no cloud required</span>
-        </div>
-      </div>
-      <div class="pricing-note">Distributed as a macOS .dmg installer</div>
-    </div>
-  </div>
-</section>
-
-<!-- ── FOOTER ─────────────────────────────────────────────────────────── -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div>
-      <div class="footer-logo">MouthFL<span style="color:var(--teal)">.</span></div>
-      <div class="footer-tagline">Built by Taymations. Eat. Sleep. Animate.</div>
-    </div>
-    <div class="footer-links">
-      <a href="https://www.taymations.com" target="_blank">taymations.com</a>
-      <a href="#features">Features</a>
-      <a href="#pricing">Buy</a>
-    </div>
-    <div class="footer-copy">© 2026 Taymations</div>
-  </div>
-</footer>
 
 <script>
 /* ─────────────────────────────────────────────────────────────────────────
@@ -832,34 +656,6 @@ const SHAPES = [
 ];
 
 
-
-/* ─────────────────────────────────────────────────────────────────────────
-   PRICING
-────────────────────────────────────────────────────────────────────────── */
-const priceInput  = document.getElementById('priceInput');
-const priceSlider = document.getElementById('priceSlider');
-const buyPrice    = document.getElementById('buyPrice');
-
-function updatePrice(val) {
-  const v = Math.max(10, parseInt(val)||10);
-  priceInput.value = v;
-  priceSlider.value = Math.min(v, 100);
-  buyPrice.textContent = '$' + v;
-  const pct = ((Math.min(v,100)-10)/90*100).toFixed(1);
-  priceSlider.style.background = `linear-gradient(to right, #3ECFC0 0%, #3ECFC0 ${pct}%, rgba(0,0,0,0.12) ${pct}%)`;
-}
-priceInput.addEventListener('input', () => updatePrice(priceInput.value));
-priceSlider.addEventListener('input', () => updatePrice(priceSlider.value));
-updatePrice(10);
-
-function handleBuy(e) {
-  e.preventDefault();
-  const price = Math.max(10, parseInt(priceInput.value)||10);
-  // PAYMENT_URL: Replace the alert below with a redirect to your payment page.
-  // For Gumroad PWYW: window.location.href = 'https://yourname.gumroad.com/l/mouthfl?suggested_price=' + price;
-  // For SquareSpace store: window.location.href = '/store/mouthfl';
-  alert('Replace this with your payment URL.\nSee code comments for Gumroad integration.');
-}
 
 /* ─────────────────────────────────────────────────────────────────────────
    SCROLL REVEAL
