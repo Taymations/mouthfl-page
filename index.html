@@ -81,9 +81,10 @@ section { padding: 110px 0; }
   object-fit: cover; flex-shrink: 0;
 }
 .nav-logo {
-  font-family: var(--display); font-weight: 400; font-size: 34px;
+  font-family: var(--display); font-weight: 400; font-size: clamp(18px, 5vw, 34px);
   color: var(--text); letter-spacing: 0.02em;
   display: flex; align-items: center; gap: 8px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;
 }
 .nav-logo .dot { color: var(--teal); }
 .nav-links { display: flex; gap: 28px; margin-left: auto; }
